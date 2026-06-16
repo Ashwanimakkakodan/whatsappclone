@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:whatsappclone/chat.dart';
+import 'package:whatsappclone/chats.dart';
+import 'package:whatsappclone/whatsapp.dart';
 
 class Home extends StatelessWidget {
-  Home({super.key});
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 6), () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => Chat()));
+    Future.delayed(Duration(seconds: 2), () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => Whatsapp()),
+      );
     });
     return Scaffold(body: Center(child: Lottie.asset("assets/whatsapp.json")));
   }
