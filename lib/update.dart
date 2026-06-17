@@ -14,6 +14,7 @@ class Update extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
+
         actions: [
           Icon(Icons.search),
           PopupMenuButton(
@@ -41,11 +42,24 @@ class Update extends StatelessWidget {
                 "Add status",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
-              leading: CircleAvatar(
-                radius: 50,
-                backgroundImage: NetworkImage(
-                  "https://tse4.mm.bing.net/th/id/OIP.ayACpdslq2Oq9hSUQnfMWQHaF1?pid=Api&h=220&P=0",
-                ),
+              leading: Stack(
+                children: [
+                  CircleAvatar(
+                    radius: 50,
+                    backgroundImage: NetworkImage(
+                      "https://tse4.mm.bing.net/th/id/OIP.ayACpdslq2Oq9hSUQnfMWQHaF1?pid=Api&h=220&P=0",
+                    ),
+                  ),
+                  Positioned(
+                    right: -2,
+                    bottom: -2,
+                    child: CircleAvatar(
+                      radius: 10,
+                      backgroundColor: Colors.green,
+                      child: Icon(Icons.add, size: 14, color: Colors.white),
+                    ),
+                  ),
+                ],
               ),
               subtitle: Text(
                 "Disappears after 24 hours",
@@ -121,9 +135,9 @@ class Update extends StatelessWidget {
           SizedBox(height: 20),
           FloatingActionButton(
             onPressed: () {},
-            child: Icon(Icons.camera_alt_rounded),
             backgroundColor: Colors.green,
             foregroundColor: Colors.white,
+            child: Icon(Icons.camera_alt_rounded),
           ),
         ],
       ),

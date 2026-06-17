@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:whatsappclone/chats.dart';
 import 'package:whatsappclone/whatsapp.dart';
 
 class Home extends StatelessWidget {

@@ -49,9 +49,9 @@ class Chats extends StatelessWidget {
 
           FloatingActionButton(
             onPressed: () {},
-            child: Icon(Icons.add),
             backgroundColor: Colors.green,
             foregroundColor: Colors.white,
+            child: Icon(Icons.add),
           ),
         ],
       ),
@@ -76,55 +76,55 @@ class Chats extends StatelessWidget {
                   padding: const EdgeInsets.all(15),
                   child: ElevatedButton(
                     onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.grey,
+                    ),
                     child: Text("All"),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      foregroundColor: Colors.grey,
-                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(15),
                   child: ElevatedButton(
                     onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.grey,
+                    ),
                     child: Text("Unread 99+"),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      foregroundColor: Colors.grey,
-                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(15),
                   child: ElevatedButton(
                     onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.grey,
+                    ),
                     child: Text("Favourites"),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      foregroundColor: Colors.grey,
-                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(15),
                   child: ElevatedButton(
                     onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.grey,
+                    ),
                     child: Text("Groups 45"),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      foregroundColor: Colors.grey,
-                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(15),
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Icon(Icons.add),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
                       foregroundColor: Colors.grey,
                     ),
+                    child: Icon(Icons.add),
                   ),
                 ),
               ],

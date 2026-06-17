@@ -6,7 +6,7 @@ import 'package:whatsappclone/communities.dart';
 import 'package:whatsappclone/update.dart';
 
 class Whatsapp extends StatefulWidget {
-  Whatsapp({super.key});
+  const Whatsapp({super.key});
 
   @override
   State<Whatsapp> createState() => _WhatsappState();
